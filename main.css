@@ -29,7 +29,10 @@ h2 {
 }
 
 h3 {
+    margin: 0;
+    
     font-size: 1.75rem;
+    text-align: center;
 }
     
 header {
@@ -42,6 +45,12 @@ header {
     
     /* font */
     color: #f0f0f0;
+}
+
+iframe {
+    margin: auto;
+    /* height: 764px;
+    width: 720px; */
 }
 
 main {
@@ -61,6 +70,25 @@ nav {
 
     /* font */
     color: #f0f0f0;
+}
+
+summary {
+    margin: 1rem;
+    text-align: center;
+}
+
+.button {
+    background: #dddddd;
+    margin: 0.1rem;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    background: #bbbbbb;
 }
 
 .container {
@@ -113,7 +141,7 @@ nav {
     flex: 1;
     margin: 0.1rem;
     margin-top: 10rem;
-    min-width: 250px;
+    min-width: 150px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     position: relative;
@@ -143,6 +171,11 @@ nav {
     font-size: 4rem;
     font-weight: bold;
     overflow: hidden;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
 }
 
 #interestsContainer {
