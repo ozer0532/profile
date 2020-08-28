@@ -1,0 +1,58 @@
+body {
+    /* display */
+    margin: 0;
+
+    /* font */
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-size: 1.25em;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+nav {
+    /* display */
+    display: block;
+    padding: 1em;
+    
+    /* color */
+    background: #5f92f1;
+
+    /* font */
+    color: #f0f0f0;
+}
+
+header {
+    /* display */
+    display: flex;
+    height: 500px;
+    padding-left: 2em; 
+    padding-right: 2em;
+    
+    /* color */
+    background: #5f92f1;
+    
+    /* font */
+    color: #f0f0f0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.headerContainer {
+    width: 100%;
+}
+
+.logo {
+    font-family: "Balsamiq Sans";
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden;
+}
