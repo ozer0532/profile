@@ -25,6 +25,7 @@ h1 {
 
 h2 {
     font-size: 2.25rem;
+    text-align: center;
 }
 
 h3 {
@@ -71,35 +72,66 @@ nav {
     width: 100%;
 }
 
-.logo {
-    font-family: "Balsamiq Sans";
-    font-size: 2rem;
+.interestIcon {
+    background: #242424;
+    background-size: cover;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+
+    /* transformation */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -110%);
 }
 
-.roleBox {
-    /* display */
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+.interestIconImage {
+    background: #dddddd;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    height: 115px;
+    width: 115px;
+    left: 5px;
+    top: 5px;
+}
 
-    /* font */
-    font-size: 2rem;
+.interestsList {
+    /* display */
+    padding: 0;
     
     /* misc */
     list-style-type: none;
 }
 
-.roleBox li {
-    /* display */
-    background: #dddddd;
-    flex-grow: 1;
-    margin: 0.1rem;
-    padding: 0.4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.interestsList li {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
 
-    /* font */
-    text-align: center;
+.interestSubcontainer {
+    flex: 1;
+    margin: 0.1rem;
+    margin-top: 10rem;
+    min-width: 250px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+}
+
+.interestSubcontainer h2 {
+    margin-block-start: 0%;
+}
+
+.interestVerticalDivider {
+    background: #dddddd;
+    margin-top: 13.4rem;
+    width: 0.25rem;
+}
+
+.logo {
+    font-family: "Balsamiq Sans";
+    font-size: 2rem;
 }
 
 .textNowrap {
@@ -111,4 +143,37 @@ nav {
     font-size: 4rem;
     font-weight: bold;
     overflow: hidden;
+}
+
+#interestsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2rem;
+    padding: 0;
+}
+
+#roleBox {
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    
+    /* font */
+    font-size: 2rem;
+    
+    /* misc */
+    list-style-type: none;
+}
+
+#roleBox li {
+    /* display */
+    background: #dddddd;
+    flex-grow: 1;
+    margin: 0.1rem;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    /* font */
+    text-align: center;
 }
