@@ -10,12 +10,20 @@ body {
     margin: 0;
 
     /* font */
+    color: #242424;
     font-family: 'Averia Sans Libre', sans-serif;
     font-size: 1.25rem;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
+}
+
+footer {
+    background: #242424;
+    height: 160px;
+
+    color: #f0f0f0
 }
 
 h1 {
@@ -55,7 +63,6 @@ iframe {
 
 main {
     /* display */
-    display: block;
     padding: 2rem;
 
     /* font */
@@ -91,9 +98,39 @@ summary {
     background: #bbbbbb;
 }
 
+.contacts {
+    display: flex;
+    justify-content: center;
+    
+    /* misc */
+    list-style-type: none;
+}
+
+.contacts li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 .container {
     margin: auto;
     max-width: 1200px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+
+.credits {
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+.footerContainer {
+    position: relative;
+    height: 128px;
+    padding: 1rem;
 }
 
 .headerContainer {
