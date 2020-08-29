@@ -1,5 +1,7 @@
 // No peeking :(
 
+var iframe, src;
+
 var activities = [
     "some fun",
     "a party",
@@ -69,7 +71,6 @@ function generateTodo() {
     do {
         m = re.exec(text);
         if (m) {
-            console.log(m[0], m[1])
             text = text.replace(m[0], getRandomFromArray(m[1]));
         }
     } while (m)
@@ -77,10 +78,29 @@ function generateTodo() {
     return text;
 }
 
-function changeActionText() {
-    
+// Based on https://stackoverflow.com/questions/36388579/prevent-iframe-from-loading-on-mobile
+function showIframe() {
+    if (window.matchMedia("(min-width: 720px)").matches) {
+        if (iframe.src !== src) {
+            iframe.src = src;
+        }
+        iframe.hidden = false;
+        document.getElementById("noGame").hidden = true;
+    } else {
+        iframe.hidden = true;
+        document.getElementById("noGame").hidden = false;
+    }
 }
 
 window.onload = function() {
     document.getElementById("actionText").innerHTML = generateTodo();
+
+    iframe = document.getElementsByTagName("iframe")[0];
+    src = iframe.dataset["src"];
+
+    showIframe();
+}
+
+window.onresize = function() {
+    showIframe();
 }

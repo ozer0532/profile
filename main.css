@@ -247,3 +247,17 @@ summary {
     /* font */
     text-align: center;
 }
+
+@media screen and (max-width: 720px) {
+    #interestsContainer {
+        flex-direction: column;
+    }
+
+    .interestVerticalDivider {
+        display: none;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
