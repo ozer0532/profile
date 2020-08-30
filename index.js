@@ -142,11 +142,6 @@ function showIframe() {
         if (iframe.src !== src) {
             iframe.src = src;
         }
-        iframe.hidden = false;
-        document.getElementById("noGame").hidden = true;
-    } else {
-        iframe.hidden = true;
-        document.getElementById("noGame").hidden = false;
     }
 }
 

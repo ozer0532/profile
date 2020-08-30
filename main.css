@@ -212,7 +212,12 @@ summary {
 
 #game {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+#noGame {
+    display: none;
 }
 
 #interestsContainer {
@@ -249,15 +254,44 @@ summary {
 }
 
 @media screen and (max-width: 720px) {
-    #interestsContainer {
-        flex-direction: column;
+    footer {
+        height: 180px;
+    }
+    
+    .copyright {
+        position: absolute;
+        bottom: 0.5rem;
+        left:1rem;
+    }
+    
+    .credits {
+        position: absolute;
+        bottom: 2rem;
     }
 
+    .footerContainer {
+        position: relative;
+        height: 148px;
+        padding: 1rem;
+    }
+    
     .interestVerticalDivider {
         display: none;
     }
-
+    
     .title {
         font-size: 3rem;
+    }
+
+    #game {
+        display: none;
+    }
+    
+    #noGame {
+        display: block;
+    }
+    
+    #interestsContainer {
+        flex-direction: column;
     }
 }
